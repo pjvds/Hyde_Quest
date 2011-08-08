@@ -1,0 +1,19 @@
+{% extends "core.j2" %}
+
+{% block content -%}
+<article class="entry">
+<h1 class="title">
+    <a href="{{ content_url(resource.url) }}">
+        {{ resource.meta.title }}
+    </a>
+</h1>
+
+
+{% filter markdown|typogrify -%}
+{% mark projectInfo -%}
+{% block projectInfo -%}{%- endblock %}
+{%- endmark %}
+{%- endfilter %}
+</article>
+
+{%- endblock %}
