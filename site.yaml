@@ -10,6 +10,7 @@ plugins:
     - hyde.ext.plugins.sorter.SorterPlugin
     - hyde.ext.plugins.tagger.TaggerPlugin
     - hyde.ext.plugins.textlinks.TextlinksPlugin
+    - hyde.ext.plugins.suffix.SuffixPlugin
 context:
     data:
         author:
@@ -39,6 +40,12 @@ meta:
     nodemeta: meta.yaml
     created: !!timestamp 2010-01-01 00:00:00
     author: Mandaris Moore
+suffix:
+     -
+        target_extension:
+            - markdown
+            - md
+        output_extension: html
 sorter:
     time:
         attr:

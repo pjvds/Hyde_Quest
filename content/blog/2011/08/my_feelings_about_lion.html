@@ -1,0 +1,56 @@
+---
+title: My feelings about Lion
+created: !!timestamp '2011-08-17 10:50:12'
+extends: post.j2
+default_block: post
+listable: true
+tags: 
+    - review
+    - macosx
+    - lion
+---
+
+{% mark excerpt -%}I consider myself a reasonable person who loves mac products. I've been using mac since the summer of 2004, when I had an internship at Apple Computer Inc. It was one of the greatest work experience of my life and I wish I had done more to pursue a career working there (but that's a whole 'nother topic). The thing is that I've used all the OS's since then and every time a new one comes out I go through a series of steps.{%- endmark %}
+
+
+1. Initial excitement that my favorite OS is getting an update that should make it even better!
+2. A splash of cold water as I notice that a lot of the updates are under the hood (Core<Fill_in_the_blank>) and all the big ticket items are basically eye candy that I don't see myself or anyone else using day to day (dashboard).
+3. Last minute concern that I haven't backed my computer up in… um… a while..
+4. Excitement that I'm installing the latest and greatest!
+5. Admiration that by and large the performance of the OS is better on the same hardware[^hardware].
+6. Nit pick at little changes to the user interface (what's with the ugly font and background with the notes in Mail? You can choose to colors blue or grey. What color and shape do you want your folders? That last one is a trick question.) and what not.
+7. Fall in love all over again. With all the software that developers are able to make with the new OS, why would you want to go back? Learn to live with it or learn to tweak it (How? It's a secret[^secrets]).
+8. Go to work every day wishing that I could work on a mac.
+
+## So what's the deal with lion ##
+I actually really liked lion when I first got it. Although at first glance it looks like someone has been sucking more and more color out of it, you can tell that a lot detail went into how things looked. Mail.app has really gotten a good shining and I was pleasantly surprised/creeped out to see how safari was smart enough to see that I was logging into my old yahoo account and then set it up in mail with only a couple button clicks. The key thing about the whole process is that it's really smooth and -for the most part- you wouldn't know that a whole lot of things have changed and if you ask me a couple months from now I probably wouldn't want to go back.
+
+But...
+
+As with most changes, there are somethings that I don't like about lion.
+
+
+1. Where are the scrollbars?  
+I know I'm not the only one out there who misses them. I was concerned about this since they demoed it during the WWDC keynote. I understand that they are supposed to flash when you first load the page or some kind of change happens, but I think that disappearing scrollbars are pointless when I'm using it at home on my iMac. In fact, I feel that they work against the user in some circumstances. For example, when I'm in Mail.app and I'm looking at the list of messages, I shouldn't have to look at the number of message at the top to figure out that I should scroll down to get more.
+![Problem with mail Lion mail.app]([[!!images/problem_with_lion_mail.png]])
+When you do enable the scrollbars, they have a tendency to look kinda bland. I like to imagine them as grey tear drops that are sad that they have to be there.
+
+2. As natural as a gesture  
+I understand that this point and the last could probably be a non-issue if I only had a magic trackpad or used the new OS with a laptop like they did with WWDC keynote demo. But, I don't have one. I have a 4+ button mouse that I use instead of the magic mouse that used to hurt my hand after an hour or so (great reason to enjoy more family time). I know I could probably get used to it if I wanted to, but this is my family's home computer. My wife and I have to work all day and use our windows boxes. This is not a strong argument, "Hey baby, I know that you've had a long day at work typing and whatnot and you want to use the machine that helped pay for to relax and check on that book of faces and electronic mail thing the kids are all into, but do you mind re-wiring your brain to make up down and down up because I don't want to go into preferences to change it back to what you are accustomed to".
+
+
+3. Rum-rum-resume  
+It is at this point that I feel a lot of people might disagree with me. I wish the resume feature of the OS was a little better fined tuned. As in, I wish I could turn it off. What? You love the fact that you can start exactly where you left off in a program? You know what? So do I! Does my wife like seeing all the safari windows that I had up when I was on there last[^last]? Do I like waiting an extra couple minutes while _all_ the applications that I had open before I restarted the machine start back up and restore themselves to their previous state all at once? No. 
+Some would argue that I could simply hold down the option button when I close a program to stop this behavior and that it does help in a lot of ways. I don't dispute this, but I do feel that there should be more control over this. If you have a faster machine (like something with a solid state drive), then you wouldn't have a problem with this. But it is a reminder to me that OS didn't have this feature before because of the overhead associated with it. I know that a year or so from now it will be a non-issue.
+
+4. The witches brew  
+This last part is purely a geek pet peeve for me, because this doesn't affect anyone other than developers. I use a couple of software packages to create this site and play with my pipe dream of being a cocoa programmer. One of the tools that I use is homebrew. [Homebrew](http://mxcl.github.com/homebrew/) is a package manager that downloads the source code of other software (ex. MySQL, Node.js), compiles them and install them in a way that doesn't cause your system to fall to pieces. The problem is that the new OS uses a different default compiler and has changed the permissions on some of the folders. I could change the compiler back, but I didn't want to mess around with it too much. The machine that I have lion installed on is my family computer and I don't want my wife to kill me when I need to re-install for the third time to fix something that I didn't understand fully. It probably already fixed...
+
+## The conclusion ##
+Overall, I really like lion and I look forward to seeing what developers can do with the new technology going forward. Does it have some faults? Yes, but with any healthy relationship you have to understand that OS change over time.
+
+[^hardware]: Of course there is a little slow down when loading dashboard for the first time and the little bit of slow down when spotlight is indexing everything, but after that you wouldn't know unless you were already hurting for resources. 
+
+[^secrets]: I actually don't use secrets. I used to do a lot of re-installs so I just change a couple preferences and leave it as is. The only thing that I know use that would be considered a tweak would be LauchBar. 
+
+[^last]: Spoils the surprise trip to Fry's!

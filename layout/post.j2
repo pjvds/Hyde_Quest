@@ -7,12 +7,12 @@
     title="{{ resource.prev_by_time.meta.title }}"
     {% if resource.prev_by_time %}
     href="{{ content_url(resource.prev_by_time.url) }}"{% endif %}>
-    Previous</a>
-<a class="backlink" href="/blog">Back to list</a>
+    Newer Posts</a>
+<a class="backlink" href="/blog">Post List</a>
 <a class="next{{' disabled' if not resource.next_by_time }}"
     title="{{ resource.next_by_time.meta.title }}"
     {% if resource.next_by_time %}
-    href="{{ content_url(resource.next_by_time.url) }}"{% endif %}>Next</a>
+    href="{{ content_url(resource.next_by_time.url) }}"{% endif %}>Older Posts</a>
 </nav>
 <article class="entry">
 <h1 class="title">
@@ -25,6 +25,7 @@
 </time>
 
 {% if resource.meta.tags %}
+Tags: 
 <ul class="tags clear">
 {% for tag in resource.meta.tags %}
 <li>

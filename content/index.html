@@ -13,15 +13,10 @@ I once read that there are two job markets. The one where you have to put in a r
 {% from "macros.j2" import render_excerpt with context %}
 <section class="blog_excerpt">
 {% set latest = site.content.walk_resources_sorted_by_time()|first %}
-
 {% if latest -%}
-
 {% refer to latest.url as article %}
 Latest Blog post: <a href="{{content_url(latest.url)}}">{{latest.meta.title}}</a>
-======================
 {{ article.excerpt|markdown|typogrify }}
-
 {%- endif %}
-
 </section>
 {% endblock %}
